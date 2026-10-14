@@ -1,9 +1,9 @@
 import os
 import pytest
 from fastapi.testclient import TestClient
-from backend.main import app
-from backend.database import SessionLocal
-from backend.models import User, MentorProfile, MentorshipRequest, Message, Session
+from main import app
+from database import SessionLocal
+from models import User, MentorProfile, MentorshipRequest, Message, Session
 
 client = TestClient(app)
 
