@@ -3,9 +3,9 @@ import json
 from fastapi import APIRouter, Depends, Query, status
 from sqlalchemy.orm import Session
 from sqlalchemy import or_
-from backend.database import get_db
-from backend.models import AITrendItem, AIToolItem, AITrendRefreshState
-from backend.schemas import (
+from database import get_db
+from models import AITrendItem, AIToolItem, AITrendRefreshState
+from schemas import (
     AITrendItemResponse, AIToolItemResponse, AITrendsStatusResponse
 )
 from backend.services.trends_service import (
