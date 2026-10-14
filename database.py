@@ -1,7 +1,7 @@
 import os
 from sqlalchemy import create_engine
 from sqlalchemy.orm import declarative_base, sessionmaker
-from backend.config import settings
+from config import settings
 
 db_url = settings.DATABASE_URL
 # Handle postgres:// vs postgresql:// prefix if using Neon / Supabase / Heroku
