@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from database import engine, Base, SessionLocal
 from seed import seed_initial_data
-from routers import (
+from routers.some_router import (
     auth, mentors, requests, conversations, sessions, notifications, ai, trends
 )
 
