@@ -3,8 +3,8 @@ import json
 import urllib.request
 import urllib.error
 from fastapi import APIRouter, HTTPException
-from backend.config import settings
-from backend.schemas import AIStudyBuddyRequest, AIStudyBuddyResponse
+from config import settings
+from schemas import AIStudyBuddyRequest, AIStudyBuddyResponse
 
 router = APIRouter(prefix="/api", tags=["ai"])
 
