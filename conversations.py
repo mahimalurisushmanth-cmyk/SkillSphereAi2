@@ -3,10 +3,10 @@ from datetime import datetime
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from sqlalchemy import or_
-from backend.database import get_db
-from backend.models import User, Conversation, Message, Notification
-from backend.schemas import MessageCreate, MessageResponse, ConversationResponse
-from backend.auth import get_current_user
+from database import get_db
+from models import User, Conversation, Message, Notification
+from schemas import MessageCreate, MessageResponse, ConversationResponse
+from auth import get_current_user
 
 router = APIRouter(prefix="/api/conversations", tags=["conversations"])
 
