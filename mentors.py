@@ -2,12 +2,12 @@ from typing import Optional, List
 from fastapi import APIRouter, Depends, HTTPException, Query, status
 from sqlalchemy.orm import Session
 from sqlalchemy import or_
-from backend.database import get_db
-from backend.models import User, MentorProfile
-from backend.schemas import (
+from database import get_db
+from models import User, MentorProfile
+from schemas import (
     MentorDirectoryItem, MentorProfileResponse, MentorProfileUpdate
 )
-from backend.auth import get_current_user, require_mentor
+from auth import get_current_user, require_mentor
 
 router = APIRouter(prefix="/api/mentors", tags=["mentors"])
 
