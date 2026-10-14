@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from database import engine, Base, SessionLocal
-from backend.seed import seed_initial_data
-from backend.routers import (
+from seed import seed_initial_data
+from routers import (
     auth, mentors, requests, conversations, sessions, notifications, ai, trends
 )
 
@@ -49,4 +49,4 @@ def read_root():
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("backend.main:app", host="127.0.0.1", port=8000, reload=True)
+    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
