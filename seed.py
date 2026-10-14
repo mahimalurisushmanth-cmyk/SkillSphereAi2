@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
-from backend.models import User, MentorProfile
-from backend.auth import hash_password
+from models import User, MentorProfile
+from auth import hash_password
 
 def seed_initial_data(db: Session):
     # Only seed if no mentors exist
