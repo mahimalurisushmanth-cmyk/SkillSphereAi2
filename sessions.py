@@ -3,10 +3,10 @@ from datetime import datetime, timedelta
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from sqlalchemy import or_, and_
-from backend.database import get_db
-from backend.models import User, Session as MentorshipSession, MentorshipRequest, Notification
-from backend.schemas import SessionCreate, SessionUpdate, SessionResponse
-from backend.auth import get_current_user
+from database import get_db
+from models import User, Session as MentorshipSession, MentorshipRequest, Notification
+from schemas import SessionCreate, SessionUpdate, SessionResponse
+from auth import get_current_user
 
 router = APIRouter(prefix="/api/sessions", tags=["sessions"])
 
