@@ -1,0 +1,6 @@
+{
+  "name": "SkillSphere AI - Mentorship & Career Platform",
+  "description": "Personalized AI learning, career roadmaps, accountability and mentorship platform with real mentor profiles, messaging, and scheduling.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
